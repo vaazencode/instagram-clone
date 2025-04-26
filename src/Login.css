@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+h1 {
+  font-family: "Grand Hotel", cursive;
+  font-size: 48px;
+  color: #262626;
+  margin-bottom: 10px;
+  align-self: flex-start; 
+  margin-right: 30px;
+
+  
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url("https://images.unsplash.com/photo-1517404215738-15263e9f9178?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dXJsfGVufDB8fDB8fHww");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+.logo {
+    margin-bottom: 5px; 
+    vertical-align: middle; 
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 325px;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    background: white;
+    color: #262626;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+h2 {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1.5px solid #ccc; 
+    border-radius: 8px; 
+    font-size: 14px;
+    color: #333;
+    background-color: #fafafa;
+    transition: 0.3s;
+}
+
+
+input:focus {
+    border: 1.5px solid #0095f6;
+    outline: none;
+}
+
+button {
+    width: 95%;
+    padding: 12px;
+    background: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0074cc;
+}
+
+
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-text a {
+    color: #0095f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 30px; 
+        height: 30px;
+    }
+
+    h1 {
+        font-size: 28px; 
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    input {
+        padding: 10px; 
+        font-size: 13px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .signup-text {
+        font-size: 13px;
+    }
+
+    .center-container {
+        padding: 20px; 
+    }
+
+    
+    body, html {
+        background-size: cover; 
+        background-position: center center; 
+        background-attachment: scroll; 
+    }
+}
+
+
